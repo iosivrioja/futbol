@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %} Competencias - Sistema de Gestion de Futbol {% endblock %}
+            
+{% block content %}
+            
+            <!-- Section Title -->
+            <div class="section-title" style="background:url(/static/img/qatar2.webp)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h1>Tabla de posiciones</h1>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li>Inner Page</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Section Title -->
+
+            <!-- Section Area - Content Central -->
+            <section class="content-info">
+
+                <div class="container paddings-mini">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            {% for p in listar_grupos_fase_grupos %}
+                            <h1> {{ p }}</h1>
+                            <table class="table-striped table-responsive table-hover result-point">
+                                <thead class="point-table-head">
+                                    <tr>
+                                        <th class="text-left">POSICION</th>
+                                        <th class="text-left">EQUIPO</th>
+                                        <th class="text-center">P</th>
+                                        <th class="text-center">G</th>
+                                        <th class="text-center">E</th>
+                                        <th class="text-center">P</th>
+                                        <th class="text-center">GF</th>
+                                        <th class="text-center">GE</th>
+                                        <th class="text-center">+/-</th>
+                                        <th class="text-center">PTS</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="text-center">
+                                    {% for l in equipo %}
+                                    
+                                    <tr>
+                                        <td class="text-left number">{{l.0}}</td>
+                                        <td class="text-left">
+                                            <img src="{{ l.1.url }}" alt=""><span>{{l.2}}</span>
+                                        </td>
+                                        <td>{{l.3}}</td>
+                                        <td>{{l.4}}</td>
+                                        <td>{{l.5}}</td>
+                                        <td>{{l.6}}</td>
+                                        <td>{{l.7}}</td>
+                                        <td>{{l.8}}</td>
+                                        <td>{{l.9}}</td>
+                                        <td>{{l.10}}</td>
+                                    </tr>
+
+                                    {% endfor %}
+                                  </tbody>
+                            </table>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- End Newsletter -->
+            </section>
+{% endblock %}
