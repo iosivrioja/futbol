@@ -20,6 +20,7 @@ Django
 
 ### Instalación 🔧
 
+```
 git clone https://github.com/iosivrioja/futbol.git #clona el repo
 
 cd futbol # entras a la carpeta del repo
@@ -38,9 +39,11 @@ pip install django-admin-volt
 pip install Pillow
 pip install colorama
 pip install django-debug-toolbar
+```
 
 ### Uso
 
+```
 git checkout nombre_de_su_rama # así cambian a su rama, por si acaso
 
 git add . # para añadir los cambios
@@ -48,18 +51,23 @@ git add . # para añadir los cambios
 git commit -m "lo que quieran comentar" # para confirmar los cambios
 
 git push -u origin nombre_de_su_rama
+```
 
 ### Luego entran al Github
 
+```
 Entran a pull request
 Hacen click en New Pull Request
 Seleccionan la rama que han creado
 Hacen click en Create Pull Request
+```
 
 ### Luego de que los cambios fueran aprobados o de que alguien haya actualizado antes que ustedes
 
+```
 git add .
 git commit -m "comentario"
 git pull origin main # para descargar los cambios a tu rama
+```
 
 
