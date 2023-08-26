@@ -20,88 +20,46 @@ Django
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+git clone https://github.com/iosivrioja/futbol.git #clona el repo
 
-_Dí cómo será ese paso_
+cd futbol # entras a la carpeta del repo
 
-```
-Da un ejemplo
-```
+git branch nombre_de_su_rama # crea el nombre de tu rama
 
-_Y repite_
+git checkout nombre_de_su_rama # cambias a tu rama
 
-```
-hasta finalizar
-```
+py -3 -m venv .venv # crea el entorno virtual de python (importante, si no lo haces puedes 
+                    # arruinar tu python)
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+.venv\Scripts\activate # inicia el entorno virtual
 
-## Ejecutando las pruebas ⚙️
+pip install Django
+pip install django-admin-volt
+pip install Pillow
+pip install colorama
+pip install django-debug-toolbar
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+### Uso
 
-### Analice las pruebas end-to-end 🔩
+git checkout nombre_de_su_rama # así cambian a su rama, por si acaso
 
-_Explica que verifican estas pruebas y por qué_
+git add . # para añadir los cambios
 
-```
-Da un ejemplo
-```
+git commit -m "lo que quieran comentar" # para confirmar los cambios
 
-### Y las pruebas de estilo de codificación ⌨️
+git push -u origin nombre_de_su_rama
 
-_Explica que verifican estas pruebas y por qué_
+### Luego entran al Github
 
-```
-Da un ejemplo
-```
+Entran a pull request
+Hacen click en New Pull Request
+Seleccionan la rama que han creado
+Hacen click en Create Pull Request
 
-## Despliegue 📦
+### Luego de que los cambios fueran aprobados o de que alguien haya actualizado antes que ustedes
 
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Marco Padilla** - *Trabajo Inicial* - [marcoapg](https://github.com/marcoapg)
-* **Eduard Torres** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
-* etc.
+git add .
+git commit -m "comentario"
+git pull origin main # para descargar los cambios a tu rama
 
 
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
